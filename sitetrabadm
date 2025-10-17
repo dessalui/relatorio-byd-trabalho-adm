@@ -1,13 +1,9 @@
 import streamlit as st
 
 # importar
-with open("style.css") as f:
+with open("design/style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-
-# carregar o CSS externo
-with open("style.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # para a capa
 st.markdown(
@@ -75,3 +71,4 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
