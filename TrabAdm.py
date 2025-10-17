@@ -1,21 +1,6 @@
 # importar as bibliotecas
 import streamlit as st
 
-# aplicar CSS personalizado
-def local_css(file_name):
-    with open("design/style.css") as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-# caminho do arquivo CSS
-local_css("design/style.css")
-
-
-# configurações da página
-st.set_page_config(
-    page_title="Relatório BYD",
-    layout="centered"
-)
-
 # Título e subtítulo
 st.write("""
 # Relatório BYD
