@@ -1,0 +1,77 @@
+import streamlit as st
+
+# importar
+with open("style.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+
+# carregar o CSS externo
+with open("style.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+# para a capa
+st.markdown(
+    """
+    <div class="header">
+        <div class="overlay">
+            <h1>Relatório BYD</h1>
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+# texto
+st.markdown(
+    """
+    <div class="content">
+        <section>
+            <h2>1. Descrição da Organização</h2>
+            <p>Um subtítulo para esta seção, pode ser longo ou curto</p>
+        </section>
+
+        <section>
+            <h2>2. Ambiente Contextual e Operacional</h2>
+            <p>Um subtítulo para esta seção, pode ser longo ou curto</p>
+        </section>
+
+        <section>
+            <h2>3. Cultura Organizacional e Gestão</h2>
+            <p>Um subtítulo para esta seção, pode ser longo ou curto</p>
+        </section>
+
+        <section>
+            <h2>4. Estratégias de Adaptação ao Ambiente</h2>
+            <p>Um subtítulo para esta seção, pode ser longo ou curto</p>
+        </section>
+
+        <section>
+            <h2>5. Mapa de Stakeholders</h2>
+            <p>(Espaço reservado para o mapa e outras informações)</p>
+        </section>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+# rodapé
+st.markdown(
+    """
+    <footer>
+        <div class="footer-container">
+            <div class="left">
+                <h4>Integrantes do Grupo:</h4>
+                <p>Andressa Rocha, Julia Dias, Marcelo Uchôa, Miguel da Costa, Gabriel Yuzo, Felipe Beltrão, Enzo Velasco e Cássio Azevedo</p>
+            </div>
+            <div class="right">
+                <h4>Professora Avaliadora:</h4>
+                <p>Priscila Correa</p>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Logo_UFRRJ_-_Universidade_Federal_Rural_do_Rio_de_Janeiro.png" alt="UFRRJ">
+        </div>
+    </footer>
+    """,
+    unsafe_allow_html=True
+)
